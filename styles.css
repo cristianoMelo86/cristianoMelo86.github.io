@@ -1,7 +1,11 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 20px;
+    background-image: url("logo_Recreio.png");
+    background-size: cover;
 }
+
+
 
 #relogio {
     font-size: 20px;
