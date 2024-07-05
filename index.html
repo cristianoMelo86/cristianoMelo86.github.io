@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Espaços</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Reserva de Espaços</h1>
+    <div id="relogio"></div>
+    <form id="reservaForm">
+        <label for="turma">Turma:</label>
+        <select id="turma" name="turma">
+            <option value="" disabled selected>Selecione uma turma</option>
+            <option value="Turma 1">Turma 1</option>
+            <option value="Turma 2">Turma 2</option>
+            <option value="Turma 3">Turma 3</option>
+            <option value="Turma 4">Turma 4</option>
+        </select>
+
+        <label for="espaço">Espaço:</label>
+        <select id="espaço" name="espaço">
+            <option value="" disabled selected>Selecione um espaço</option>
+            <option value="Foyer">Foyer</option>
+            <option value="Multi-Uso">Multi-Uso</option>
+            <option value="Brinquedoteca">Brinquedoteca</option>
+            <option value="Sala de Jogos">Sala de Jogos</option>
+            <option value="Quadra">Quadra</option>
+            <option value="Sala de Dança">Sala de Dança</option>
+            <option value="Casa da Bruxa">Casa da Bruxa</option>
+            <option value="Telecentro">Telecentro</option>
+        </select>
+
+        <label for="horario">Horário:</label>
+        <input type="time" id="horario" name="horario">
+
+        <button type="button" onclick="fazerReserva()">Reservar</button>
+        <button type="button" onclick="atualizarReserva()" id="btnAtualizar" style="display:none;">Atualizar</button>
+        <button type="button" onclick="zerarReservas()">Zerar Todas as Reservas</button>
+        
+        <button type="button" onclick="imprimirReservas()">Imprimir Reservas</button>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data">
+
+    </form>
+
+    <div class="reservas-container">
+        <div>
+            <h2>Reservas Feitas</h2>
+            <ul id="listaReservas"></ul>
+        </div>
+        <div>
+            <h2>Turmas</h2>
+            <div id="turmasReservas"></div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

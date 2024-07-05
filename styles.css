@@ -1,0 +1,91 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+}
+
+#relogio {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+.reservas-container div{
+    margin-top: 20px;
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Botão Reservar (Success) */
+button[type="button"]:not(.edit-btn):not(.delete-btn) {
+    background-color: #198754; /* Cor do botão Success do Bootstrap 5.3 */
+    color: white;
+}
+
+button[type="button"]:not(.edit-btn):not(.delete-btn):hover {
+    background-color: #157347; /* Cor do botão Success ao passar o mouse do Bootstrap 5.3 */
+}
+
+/* Botão Editar (Amarelo) */
+.edit-btn {
+    background-color: #ffc107; /* Cor amarela */
+    color: black;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800; /* Amarelo mais escuro ao passar o mouse */
+}
+
+/* Botão Excluir (Vermelho) */
+.delete-btn {
+    background-color: #dc3545; /* Cor vermelha */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Vermelho mais escuro ao passar o mouse */
+}
+
+.reservas-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+#listaReservas {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaReservas li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#turmasReservas {
+    margin-top: 20px;
+}
